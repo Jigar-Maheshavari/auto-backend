@@ -8,13 +8,9 @@ const port = 3000;
 // Use JSON parsing middleware
 app.use(bodyParser.json());
 
-
-
-
-
 app.get('/', (req, res) => {
 
-    res.send(`Hello, World! ${new Date()} ${process.env.DB}`,);
+    res.send(`Hello, World! 1 ${new Date()} ${process.env.DB}`,);
 
 });
 
