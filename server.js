@@ -11,7 +11,7 @@ app.use(bodyParser.json());
 
 app.get('/', (req, res) => {
 
-    res.send('Hello, World!', new Date());
+    res.send(`Hello, World! ${new Date()}`,);
 
 });
 
